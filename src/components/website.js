@@ -1,25 +1,14 @@
-import React, { Component } from 'react'
-import {card} from './card'
+import React, { Component } from "react";
+import { card as cards } from "./card";
 // import Carddetail from './carddetail'
-import Tdcard from './Tdcard'
-
-
+import Tdcard from "./Tdcard";
 
 export default class Website extends Component {
-    render() {
+  render() {
+    const CardsDisplay = cards.map(card => {
+      return <Tdcard key={card.id} card={card} />;
+    });
 
-        const CardsDisplay= card.map( (card)=>{
-            return(  <Tdcard
-            key={ card.id }
-            card={ card }
-            />
-            )
-        });
-
-        return (
-            <div className="projet">
-                {CardsDisplay}
-            </div>
-        )
-    }
+    return <div className="projet">{CardsDisplay}</div>;
+  }
 }

@@ -31,12 +31,13 @@ class Header extends React.Component {
 
   render () {
     return (
-      
-        <Menu  onStateChange={(state) => this.handleStateChange(state)} isOpen={this.state.julien} right pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+      <div id="outer-container">
+        <Menu onStateChange={(state) => this.handleStateChange(state)} isOpen={this.state.julien} right pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
             <Link onClick={() => this.francois()} id="home" className="menu-item" to="/">Home</Link>
             <Link onClick={() => this.francois()} id="about" className="menu-item" to="/about">About</Link>
             <Link onClick={() => this.francois()} id="contact" className="menu-item" to="/form">Contact</Link>
         </Menu>
+      </div>
     );
   }
 }

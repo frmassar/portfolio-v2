@@ -8,14 +8,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
 .App {
   text-align: center;
 }
@@ -598,6 +590,9 @@ body, button, input {
     padding: 0;
   }
 }
+.example{
+  position:absolute !important;
+  }
 
 .paper{
   background-image: url('/assets/fusé.png');

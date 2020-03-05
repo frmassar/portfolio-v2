@@ -7,7 +7,7 @@ const Formulaire = (props) => {
 
   const handleChangePage = () => {
     setTimeout(()=>{
-      props.history.push('/');
+      props.history.push('/portfolio-v2/');
     }, 3000)
   }
 
